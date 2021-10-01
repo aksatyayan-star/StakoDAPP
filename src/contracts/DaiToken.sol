@@ -1,4 +1,4 @@
-pragma solidity ^0.5.0;
+pragma solidity >=0.4.21 <0.9.0;
 
 contract DaiToken {
     string  public name = "Mock DAI Token";
@@ -18,6 +18,7 @@ contract DaiToken {
         uint256 _value
     );
 
+    //here we give address and it returns the no or balance
     mapping(address => uint256) public balanceOf;
     mapping(address => mapping(address => uint256)) public allowance;
 
